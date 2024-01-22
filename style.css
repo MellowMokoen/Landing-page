@@ -1,0 +1,155 @@
+body {
+  font-family: monospace;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: content-box;
+}
+
+header {
+  padding: 30px;
+  border: 2px solid black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin: 50px;
+}
+
+.slogan,
+.about-heading,
+.contact-heading,
+.service-heading {
+  font-size: 50px;
+}
+
+.slogan {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.about-heading {
+  text-align: right;
+  margin: 50px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image1,
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 10px solid white;
+}
+
+.image1 {
+  width: 400px;
+  height: 300px;
+}
+
+.image2 {
+  width: 350px;
+  height: 300px;
+  top: 150px;
+  left: 300px;
+}
+
+.about-paragraph {
+  line-height: 2;
+  font-size: 20px;
+}
+
+.background-health {
+  background-image: url("images/puppy2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.background-adoption {
+  background-image: url("images/puppy4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.backgrounds {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 45px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px 7px;
+  box-shadow: 4px 4px gray;
+  font-size: 20px;
+}
+
+.background-adoption,
+.background-health {
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  color: white;
+}
+
+.contact-heading {
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.service-heading {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+form {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+}
+
+.form-control {
+  max-width: 50%;
+  width: 100%;
+}
+
+.form-label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
