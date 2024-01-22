@@ -10,6 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/333c7b4d75.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,54 +21,65 @@
       <div class="navbar">
         <h3>Landing page</h3>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <a href="#"><li>Home</li></a>
+
+          <a href="#about"><li>About</li></a>
+
+          <a href="#service"><li>Services</li></a>
+
+          <a href="#contact"><li>Contact</li></a>
         </ul>
       </div>
       <h1>Puppy-Care</h1>
       <p class="slogan">Wanna adopt a puppy? We got you!</p>
     </header>
-    <div class="about-heading">About us</div>
-    <content id="about">
-      <div class="image-container">
-        <img src="images/puppy3.jpg" width="300" class="image1" alt="" />
-        <img src="images/puppy1.jpg" width="300" class="image2" alt="" />
+    <div class="content">
+      <div class="about-heading">About us</div>
+      <div id="about">
+        <div class="image-container">
+          <img src="images/puppy3.jpg" width="300" class="image1" alt="" />
+          <img src="images/puppy1.jpg" width="300" class="image2" alt="" />
+        </div>
+
+        <p class="about-paragraph">
+          Puppy-Care is a compassionate and dedicated company committed to the
+          <br />
+          well-being of our four-legged friends. Specializing in the adoption
+          and
+          <br />
+          healthcare of various puppy breeds, Puppy-Care strives to create
+          loving
+          <br />
+          and lasting connections between adorable puppies and caring families.
+          <br />
+          Our adoption program ensures that each puppy finds a forever home
+          where
+          <br />
+          they will be cherished and nurtured. In addition to our adoption
+          <br />
+          services, Puppy-Care takes pride in providing top-notch healthcare for
+          <br />
+          puppies, offering a range of veterinary services to keep them happy
+          and
+          <br />
+          healthy. With a team of experienced and compassionate professionals,
+          Puppy-Care <br />
+          stands as a trusted partner in the journey of pet ownership, promoting
+          <br />
+          responsible and joyful relationships between puppies and their new
+          families.
+        </p>
       </div>
 
-      <p class="about-paragraph">
-        Puppy-Care is a compassionate and dedicated company committed to the
-        <br />
-        well-being of our four-legged friends. Specializing in the adoption and
-        <br />
-        healthcare of various puppy breeds, Puppy-Care strives to create loving
-        <br />
-        and lasting connections between adorable puppies and caring families.
-        <br />
-        Our adoption program ensures that each puppy finds a forever home where
-        <br />
-        they will be cherished and nurtured. In addition to our adoption <br />
-        services, Puppy-Care takes pride in providing top-notch healthcare for
-        <br />
-        puppies, offering a range of veterinary services to keep them happy and
-        <br />
-        healthy. With a team of experienced and compassionate professionals,
-        Puppy-Care <br />
-        stands as a trusted partner in the journey of pet ownership, promoting
-        <br />
-        responsible and joyful relationships between puppies and their new
-        families.
-      </p>
-    </content>
-    <div class="services">
-      <div class="service-heading">What we offer</div>
-      <div class="backgrounds">
-        <div class="background-adoption">
-          <button>Puppy Adoption</button>
-        </div>
-        <div class="background-health">
-          <button>Puppy Healthcare</button>
+      <div class="services">
+        <div class="service-heading">What we offer</div>
+        <div class="backgrounds">
+          <div class="background-adoption">
+            <button class="service-btn">Puppy Adoption</button>
+          </div>
+          <div class="background-health">
+            <button class="service-btn">Puppy Healthcare</button>
+          </div>
         </div>
       </div>
     </div>
@@ -73,39 +88,65 @@
     </div>
     <form>
       <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label"
-          >Your name & surname</label
-        >
-        <input type="text" class="form-control" aria-describedby="emailHelp" />
-      </div>
-      <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="text" class="form-control" aria-describedby="emailHelp" />
-      </div>
-      <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label">Type of breed</label>
-        <input type="search" class="form-control" />
-      </div>
-      <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label"
-          >Puppy age preferred</label
-        >
+        <label for="name&surname" class="form-label">Your name & surname</label>
         <input
-          type="number"
+          type="text"
           class="form-control"
-          aria-describedby="emailHelp"
+          aria-describedby="name&surname"
+          id="name&surname"
+          autocomplete="none"
         />
       </div>
       <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label"
-          >Puppy sex preferred</label
-        >
-        <input type="text" class="form-control" aria-describedby="emailHelp" />
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="emailHelp"
+          id="exampleInputEmail1"
+          autocomplete="none"
+        />
       </div>
-      <button type="submit">Submit</button>
+      <div class="mb-5">
+        <label for="typeBreed" class="form-label">Type of breed</label>
+        <input
+          type="search"
+          class="form-control"
+          aria-describedby="typeBreed"
+          id="typeBreed"
+          autocomplete="none"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="age" class="form-label">Puppy age preferred</label>
+        <input
+          type="number"
+          class="form-control"
+          aria-describedby="age"
+          id="age"
+          autocomplete="none"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="sex" class="form-label">Puppy sex preferred</label>
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="sex"
+          id="sex"
+          autocomplete="none"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
     <footer>
-      <div>Footer</div>
+      <p class="text-center media-heading">Contact Us</p>
+      <div class="contact-icons text-center">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </footer>
   </body>
 </html>
