@@ -128,15 +128,15 @@ h1 {
 }
 
 .image1 {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
 }
 
 .image2 {
-  width: 350px;
-  height: 300px;
-  top: 150px;
-  left: 300px;
+  width: 250px;
+  height: 200px;
+  top: 130px;
+  left: 200px;
 }
 
 .about-paragraph {
@@ -243,7 +243,7 @@ form {
 
 .submit-btn {
   padding: 15px 20px;
-  border: none;
+  font-size: 15px;
   background-color: white;
   color: rgb(250, 87, 87);
   box-shadow: 3px 3px green;
