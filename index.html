@@ -10,6 +10,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/333c7b4d75.js"
       crossorigin="anonymous"
@@ -17,23 +23,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <h3>Landing page</h3>
-        <ul>
-          <a href="#"><li>Home</li></a>
-
-          <a href="#about"><li>About</li></a>
-
-          <a href="#service"><li>Services</li></a>
-
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><span class="logo1">Puppy</span><span class="logo">-Care</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get a quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <h1>Puppy-Care</h1>
-      <p class="slogan">Wanna adopt a puppy? We got you!</p>
-    </header>
+    </nav>
+
     <div class="content">
+      <h1><span class="heading">Puppy</span>-Care</h1>
+      <p class="slogan">Wanna adopt a puppy? We got you!</p>
+      <hr class="line" />
       <div class="about-heading">About us</div>
       <div id="about">
         <div class="image-container">
@@ -83,62 +114,72 @@
         </div>
       </div>
     </div>
-    <div class="contact">
-      <div class="contact-heading">Get a quote</div>
+
+    <div class="contact-heading">Get a quote</div>
+    <div class="row">
+      <div class="col-6">
+        <form>
+          <div class="mb-5">
+            <label for="name&surname" class="form-label"
+              >Your name & surname</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="name&surname"
+              id="name&surname"
+              autocomplete="none"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="emailHelp"
+              id="exampleInputEmail1"
+              autocomplete="none"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="typeBreed" class="form-label">Type of breed</label>
+            <input
+              type="search"
+              class="form-control"
+              aria-describedby="typeBreed"
+              id="typeBreed"
+              autocomplete="none"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="age" class="form-label">Puppy age preferred</label>
+            <input
+              type="number"
+              class="form-control"
+              aria-describedby="age"
+              id="age"
+              autocomplete="none"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="sex" class="form-label">Puppy sex preferred</label>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="sex"
+              id="sex"
+              autocomplete="none"
+            />
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+      <div class="col-6">
+        <img src="images/giphy.gif" class="gif" width="300" />
+      </div>
     </div>
-    <form>
-      <div class="mb-5">
-        <label for="name&surname" class="form-label">Your name & surname</label>
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="name&surname"
-          id="name&surname"
-          autocomplete="none"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="emailHelp"
-          id="exampleInputEmail1"
-          autocomplete="none"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="typeBreed" class="form-label">Type of breed</label>
-        <input
-          type="search"
-          class="form-control"
-          aria-describedby="typeBreed"
-          id="typeBreed"
-          autocomplete="none"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="age" class="form-label">Puppy age preferred</label>
-        <input
-          type="number"
-          class="form-control"
-          aria-describedby="age"
-          id="age"
-          autocomplete="none"
-        />
-      </div>
-      <div class="mb-5">
-        <label for="sex" class="form-label">Puppy sex preferred</label>
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="sex"
-          id="sex"
-          autocomplete="none"
-        />
-      </div>
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
     <footer>
       <p class="text-center media-heading">Contact Us</p>
       <div class="contact-icons text-center">
