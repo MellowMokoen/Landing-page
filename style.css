@@ -21,6 +21,14 @@
   z-index: -1;
 }
 
+.navbar {
+  background-color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .services,
 .contact-heading,
 .row,
@@ -38,16 +46,17 @@ footer {
 }
 
 .navbar a:hover {
+  color: rgb(250, 87, 87);
   cursor: pointer;
   text-decoration: underline;
 }
 
-ul {
+.navbar-nav ul {
   list-style: none;
   display: flex;
 }
 
-ul li {
+.navbar-nav li {
   color: green;
   padding: 8px;
   margin-right: 20px;
@@ -132,10 +141,11 @@ h1 {
 
 .about-paragraph {
   font-family: monospace;
-  color: white;
+  color: rgb(250, 87, 87);
   line-height: 2;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .background-health {
@@ -182,6 +192,25 @@ h1 {
   z-index: -1;
 }
 
+@media screen and (min-width: 374px) and (max-width: 900px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .slogan {
+    font-size: 18px;
+  }
+
+  .image1,
+  .image2 {
+    display: none;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+}
 .contact-heading {
   color: green;
   text-align: center;
@@ -189,14 +218,13 @@ h1 {
 }
 
 .service-heading {
-  color: white;
+  color: green;
   text-align: center;
   margin-top: 100px;
 }
 
 form {
-  display: block;
-  margin: 50px auto;
+  margin: 40px auto;
   max-width: 80%;
 }
 
@@ -214,29 +242,74 @@ form {
 }
 
 .submit-btn {
-  padding: 15px;
+  padding: 15px 20px;
   border: none;
-  background-color: green;
-  color: blanchedalmond;
-  box-shadow: 3px 3px black;
+  background-color: white;
+  color: rgb(250, 87, 87);
+  box-shadow: 3px 3px green;
   border-radius: 4px 4px;
+  font-weight: bold;
 }
 
 .gif {
-  width: 700px;
-  height: 600px;
+  width: 80%;
+  height: 60%;
+  margin: 60px 60px 0 0;
+  border-radius: 16px 19px;
+  box-shadow: 6px 4px 5px 4px rgb(108, 179, 108);
 }
 
 .contact-icons {
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   color: green;
+  padding: 30px;
+  margin: 30px;
+}
+
+.contact-icons i {
   padding: 20px;
-  margin: 20px;
+  background-color: white;
+  border-radius: 20px 20px;
+}
+
+.contact-icons i:hover {
+  color: rgb(250, 87, 87);
+  cursor: pointer;
 }
 
 .media-heading {
   font-size: 30px;
-  color: green;
+  color: white;
   margin: 40px;
+  font-weight: bold;
+}
+
+footer {
+  font-family: monospace;
+  background-color: rgb(250, 87, 87);
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address ul {
+  margin-right: 40px;
+}
+
+.address ul li {
+  padding: 10px;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+}
+
+.address-heading {
+  font-size: 40px;
+  text-decoration: underline;
 }

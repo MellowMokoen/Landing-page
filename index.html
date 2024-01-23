@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><span class="logo1">Puppy</span><span class="logo">-Care</span></a
+          >Puppy<span class="logo">-Care</span></a
         >
         <button
           class="navbar-toggler"
@@ -48,13 +48,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about-us">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get a quote</a>
+              <a class="nav-link" href="#quote">Get a quote</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
       <h1><span class="heading">Puppy</span>-Care</h1>
       <p class="slogan">Wanna adopt a puppy? We got you!</p>
       <hr class="line" />
-      <div class="about-heading">About us</div>
+      <div class="about-heading" id="about-us">About us</div>
       <div id="about">
         <div class="image-container">
           <img src="images/puppy3.jpg" width="300" class="image1" alt="" />
@@ -115,7 +115,7 @@
       </div>
     </div>
 
-    <div class="contact-heading">Get a quote</div>
+    <div class="contact-heading" id="quote">Get a quote</div>
     <div class="row">
       <div class="col-6">
         <form>
@@ -180,13 +180,30 @@
         <img src="images/giphy.gif" class="gif" width="300" />
       </div>
     </div>
-    <footer>
+    <footer id="contact">
       <p class="text-center media-heading">Contact Us</p>
-      <div class="contact-icons text-center">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
+      <div>
+        <div class="contact-icons text-center">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="address">
+          <ul>
+            <li class="address-heading">Business Address:</li>
+            <li>Puppy-Care Pet Services</li>
+            <li>123 Bark Street</li>
+            <li>Pawville, SA 54321</li>
+          </ul>
+
+          <ul>
+            <li class="address-heading">Contact Numbers:</li>
+            <li>General Inquiries: +27 11 555 1234</li>
+            <li>Puppy Adoption: +27 11 555 5678</li>
+            <li>Health-care Services: +27 11 555 8765</li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
